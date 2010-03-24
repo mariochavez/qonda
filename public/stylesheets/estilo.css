@@ -1,0 +1,527 @@
+body {
+	margin: 0;
+	background: #fff url(../images/cabecera-bg.gif) 0 0 repeat-x;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+/*---<documentos />---*/
+
+#documento {
+	margin: 0;
+	background:transparent url(../images/pie-bg.gif) center bottom repeat-x;
+}
+
+/*---<pagina />---*/
+
+#pagina {
+	width: 960px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+/*---<cabecera />---*/
+
+#cabecera {
+	width: 960px;
+	height: 50px;
+	background: #93b928 url(../images/cabecera-bg.gif) 0 0 repeat-x;
+}
+
+	#perfil {
+		float: left;
+		width: 200px;
+		height: 50px;
+	}
+	
+		#perfil images {
+			float: left;
+			width: 35px;
+			height: 35px;
+			margin: 8px 8px 0 0;
+		}
+		
+		#perfil h4 {
+			margin: 8px 0 0 0;
+			font-size: 10pt;
+			line-height: 13pt;
+			color: #fff;
+			border-right: 1px dotted #aeca5d;
+		}
+		
+			#perfil h4 span {
+				font-size: 8pt;
+			}
+			
+				span.perfil a {
+					text-decoration: none;
+					color: #fff;
+				}
+			
+				span.cerrar a {
+					text-decoration: none;
+					color: #ffff00;
+				}
+	
+	#iconos {
+		float: left;
+		width: 200px;
+		height: 50px;
+	}
+	
+	#iconos ul {
+		margin: 10px 0 0 5px;
+		padding: 0;
+		
+	}
+	
+		#iconos ul li {
+			float: left;
+			display: inline;
+			margin: 0;
+			padding: 5px 7px;
+			position: relative;
+		}
+		
+			span.new {
+				font-size: 8pt;
+				position: absolute;
+				top: 0;
+				right: 0;
+				margin: 0;
+				padding: 1px 2px;
+				background-color: red;
+				font-weight: bold;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				color: #fff;
+			}
+		
+		#iconos ul li a {
+			text-decoration: none;
+			color: #fff;
+		}
+	
+	#titulo {
+		float: right;
+		width: 190px;
+		height: 50px;
+	}
+	
+		#titulo h1 {
+			margin: 0;
+			padding: 10px 20px 0 0;
+			text-align: right;
+		}
+	
+	#qondatv {
+		float: right;
+		width: 120px;
+		height: 50px;
+	}
+
+/*---<menu />---*/
+
+#menu {
+	width: 960px;
+	height: 25px;
+	background-color: #93b928;
+}
+
+	#opciones {
+		margin: 0;
+		padding: 0;
+		height: 25px;
+		list-style: none;
+		display: inline;
+		overflow: hidden;
+	}
+
+		#opciones li {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			display: inline;
+		}
+	
+		#opciones a {
+			float: left;
+			padding: 25px 0 0 0;
+			overflow: hidden;
+			height: 0px !important;
+			height /**/:25px; /* for IE5/Win Only */
+		}
+	
+			#opciones a:hover {
+				background-position: 0 -25px;
+			}
+			
+			#opciones a:active, #opciones a.selected {
+				background-position: 0 -25px;
+			}
+	
+			#opcion-inicio a {
+				width: 35px;
+				background: url(../images/opcion-inicio.gif) 0 0 no-repeat;
+			}		
+
+			#opcion-sudafrica a {
+				width: 114px;
+				background: url(../images/opcion-sudafrica.gif) 0 0 no-repeat;
+			}
+			
+			#opcion-aficionados a {
+				width: 98px;
+				background: url(../images/opcion-aficionados.gif) 0 0 no-repeat;
+			}
+			
+			#opcion-blogeros a {
+				width: 82px;
+				background: url(../images/opcion-blogeros.gif) 0 0 no-repeat;
+			}
+			
+			#opcion-foros a {
+				width: 63px;
+				background: url(../images/opcion-foros.gif) 0 0 no-repeat;
+			}
+			
+			#opcion-amigos a {
+				width: 71px;
+				background: url(../images/opcion-amigos.gif) 0 0 no-repeat;
+			}
+			
+			#opcion-multimedia a {
+				width: 94px;
+				background: url(../images/opcion-multimedia.gif) 0 0 no-repeat;
+			}
+			
+			#opcion-bellas a {
+				width: 68px;
+				background: url(../images/opcion-bellas.gif) 0 0 no-repeat;
+			}
+			
+			#opcion-mi-zona a {
+				width: 75px;
+				background: url(../images/opcion-mi-zona.gif) 0 0 no-repeat;
+			}
+			
+			#opcion-mi-cuenta a {
+				width: 85px;
+				background: url(../images/opcion-mi-cuenta.gif) 0 0 no-repeat;
+			}
+
+
+/*---<contenido />---*/
+
+#cuerpo{
+	width: 960px;
+	overflow: hidden;
+}
+
+/*---<contenido />---*/
+
+#contenido {
+	float: left;
+	width: 800px;
+}
+
+	#submenu {
+		width: 800px;
+		height: 31px;
+		margin: 20px 0 10px 0;
+		border: 1px solid #eee;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+	}
+
+		#submenu ul {
+			margin: 0;
+			padding: 0;
+		}
+	
+			#submenu ul li {
+				float: left;
+				list-style: none;
+				margin: 0;
+				font-size: 8pt;
+				font-weight: bold;
+				text-transform: uppercase;
+				border-right: 1px solid #eee;				
+			}
+			
+				#submenu ul li a {
+					display: block;
+					padding: 9px;
+					text-decoration: none;
+					color: #666;
+				}
+			
+				#submenu ul li a:hover {
+					padding: 9px;
+					background-color: #eee;
+					color: #007ab7;
+				}
+			
+				#submenu ul li a.subselected {
+					background-color: #eee;
+					color: #007ab7;
+				}
+
+
+	#miniopciones {
+		border-bottom: 1px solid #eee;
+		width: 800px;
+		height: 40px;
+	}
+	
+		.total-arriba {
+			float: left;
+			width: 200px;
+		}
+	
+			.total-arriba p {
+				margin: 0;
+				padding: 0 0 20px 0;
+				font-size: 10pt;
+				color: #ccc;
+			}
+	
+	.ordenar {
+		float: right;
+		width: 300px;
+	}
+	
+		.ordenar p {
+			margin: 0;
+			padding: 0 0 20px 0;
+			font-size: 10pt;
+			text-align: right;
+			color: #333;
+		}
+		
+			.ordenar p a {
+				text-decoration: none;
+				color: #007ab7;
+			}
+	
+			.ordenar p span {
+				color: #ccc; 
+			}
+	
+	
+
+	.aficionado {
+		float: left;
+		width: 400px;
+		height: 90px;
+		border-bottom: 1px solid #eee;
+		background-color: #fff;
+	}
+	
+		.display-aficionado {
+			float: left;
+			width: 50px;
+			height: 50px;
+			padding: 20px 10px 20px 0;
+		}
+		
+		.info-aficionado h4 {
+			margin: 0;
+			padding: 20px 0 5px 0;
+			font-size: 8pt;
+			color: #007ab7;
+		}
+		
+			span.ciudad {
+				padding: 0 0 0 10px;
+				font-weight: normal;
+				color: #ccc;
+			}
+			
+			span.status {
+				float: right;
+				margin-right: 10px;
+			}
+			
+			span.status images {
+				padding: 0 0 0 10px;
+				vertical-align: middle;
+			}
+			
+		.info-aficionado p {
+			margin: 0;
+			padding: 0 0 5px 0;
+			font-size: 8pt;
+			color: #333;
+		}
+		
+		.info-aficionado ul {
+			margin: 0;
+			padding: 0;
+		}
+
+		.info-aficionado ul li {
+			float: left;
+			list-style: none;
+			margin: 0;
+			padding: 0 10px 0 0;
+			font-size: 8pt;
+			color: #ccc;
+		}
+		
+			.info-aficionado ul li.fav {
+				float: right;
+				margin-right: 0;
+			}
+
+	#minipaginacion {
+		clear: both;
+	}
+	
+		.total {
+			float: left;
+			width: 200px;
+		}
+		
+			.total p {
+				margin: 0;
+				padding: 20px 0 0 0;
+				font-size: 10pt;
+				color: #007ab7;
+			}
+		
+		.paginacion {
+			float: right;
+			width: 300px;
+		}
+		
+			.paginacion p {
+				margin: 0;
+				padding: 20px 0 0 0;
+				font-size: 10pt;
+				text-align: right;
+				color: #333;
+			}
+				
+				.paginacion p a {
+					text-decoration: none;
+					color: #007ab7;
+				}
+			
+				.paginacion p span {
+					font-size: 14pt;
+					vertical-align: middle;
+				}		
+
+/*---<barra />---*/
+
+#barra {
+	float: left;
+	width: 150px;
+	margin: 0 0 0 10px;
+}
+
+	#banner {
+		width: 150px;
+		height: 520px;
+		margin: 20px 0;
+	}
+	
+	.publicidad {
+		width: 150px;
+		margin: 0 0 20px 0;
+	}
+	
+		.publicidad h4 {
+			margin: 0 0 10px 0;
+			font-size: 8pt;
+			color: #007ab7;
+		}
+		
+		.publicidad images {
+			margin: 0 0 10px 0;
+		}
+		
+		.publicidad p {
+			margin: 0;
+			font-size: 8pt;
+			line-height: 13pt;
+			color: #333;
+		}
+	
+	#social-media {
+		width: 150px;
+		height: 70px;
+		margin: 0 0 20px 0;
+		background-color: #e1e2e2;
+	}
+	
+		#social-media h4 {
+			margin: 0;
+			padding: 5px 0 10px 0;
+			font-size: 8pt;
+			color: #007ab7;
+			text-align:center;
+		}
+
+		#social-media ul {
+			margin: 0;
+			padding: 0;
+		}
+		
+		#social-media ul li {
+			float: left;
+			width: 75px;
+			text-align:center;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+/*---<pie />---*/
+
+#pie {
+	width: 960px;
+	height: 52px;
+	background: #c3c4c5 url(../images/pie-bg.gif) 0 0 repeat-x;
+}
+
+	#logos {
+		float: left;
+		width: 600px;
+		height: 52px;
+	}
+
+		#logos ul {
+			margin: 18px 0 0 0;
+			padding: 0;
+		}
+
+			#logos ul li {
+				float: left;
+				display: inline;
+				margin-right: 10px;
+			}
+
+	#copy {
+		float: right;
+		width: 360px;
+		height: 52px;
+	}
+	
+		#copy p {
+			margin: 18px 0 0 0;
+			padding: 0;
+			font-size: 8pt;
+			text-align: right;
+			color: #fff;
+		}
+		
+			#copy p span {
+				padding-left: 10px;
+			}
+			
+			#copy p span a {
+				text-decoration: none;
+				color: #fff;
+			}
+

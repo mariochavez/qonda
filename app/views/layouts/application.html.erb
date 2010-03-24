@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title><%=config['plugins.tog_core.site.name']%></title>
+<meta name="language" content="<%=I18n.locale%>" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="title" content="<%=config['plugins.tog_core.site.name']%>"/>
+<meta name="title" content="<%=config['plugins.tog_core.site.name']%>" />
+<meta name="description" content="Red social para aficionados del deporte" />
+<meta name="keywords" content="qonda, aficionados, qondaaficionados" />
+<meta name="author" content="Linking Paths" />
+
+<link rel="icon" href="/tog_core/images/favicon.ico" />
+
+<!--
+<link href="/tog_core/stylesheets/template.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="/tog_core/stylesheets/style.css"    rel="stylesheet" media="screen" type="text/css" />
+<link href="/tog_core/stylesheets/pages.css"    rel="stylesheet" media="screen" type="text/css" />
+-->
+<link href="/stylesheets/estilo.css"    rel="stylesheet" media="screen" type="text/css" />
+
+<!--[if lt IE 7.]>
+<link rel="stylesheet" type="text/css" media="screen" href="/tog_core/stylesheets/ie6.css" />
+<![endif]-->
+
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" media="screen" href="/tog_core/stylesheets/ie7.css" />
+<![endif]-->
+
+<%= inject_autodiscovery %>
+<%= inject_js %>
+<%= inject_css %>
+
+<link rel="start" type="text/html" href="/" title="Página de inicio" />
+
+</head>
+
+<div id="documento">
+    <div id="pagina">
+    	<div id="cabecera">
+        
+        	<div id="perfil">
+            	<img alt="display" src="images/display.jpg" />
+            	<h4><%= link_to I18n.t("tog_core.views.shared.header_options.login"), login_path -%>Hola, Diego Armando<br /><span class="perfil"><a href="#">mi perfil</a></span> | <span class="cerrar"><a href="#">cerrar sesi&oacute;n</a></span></h4>
+            </div><!--end perfil-->
+            
+            <div id="iconos">
+            	<ul>
+                	<li><a title="Icono" href="#"><img alt="icono" src="images/icono.gif" border="0" /><span class="new">10</span></a></li>
+                    <li><a title="Icono" href="#"><img alt="icono" src="images/icono.gif" border="0" /></a></li>
+                    <li><a title="Icono" href="#"><img alt="icono" src="images/icono.gif" border="0" /></a></li>
+                    <li><a title="Icono" href="#"><img alt="icono" src="images/icono.gif" border="0" /></a></li>
+                </ul>
+            </div><!--end iconos-->
+            
+            <div id="titulo">
+            	<h1><a href="#"><img alt="Q'ondaficionados!" src="images/qondaficionados-logo.gif" border="0" /></a></h1>
+            </div><!--end titulo-->
+            
+            <div id="qondatv">
+            	<img alt="qondatv" src="images/qondatv-banner.jpg" /></div><!--end qondatv-->           
+        
+        </div><!--end cabecera-->
+        
+        <div id="menu">
+        	<ul id="opciones">
+            	<li id="opcion-inicio"><a href="#">Inicio</a></li>
+                <li id="opcion-sudafrica"><a href="#">Sud&aacute;frica 2010</a></li>
+                <li id="opcion-aficionados"><a class="selected" href="#">Aficionados</a></li>
+                <li id="opcion-blogeros"><a href="#">Blogeros</a></li>
+                <li id="opcion-foros"><a href="#">Foros</a></li>
+                <li id="opcion-amigos"><a href="#">Amigos</a></li>
+                <li id="opcion-multimedia"><a href="#">Multimedia</a></li>
+                <li id="opcion-bellas"><a href="#">Bellas</a></li>
+                <li><div id="buscador"></div><!--end buscador--></li>
+                <li id="opcion-mi-zona"><a href="#">Mi Zona</a></li>
+                <li id="opcion-mi-cuenta"><a href="#">Mi Cuenta</a></li>
+            </ul>
+        </div><!--end menu-->
+        
+        <div id="cuerpo">
+        
+            <div id="contenido">
+            
+                <div id="otrasopciones">
+                
+                    <div id="submenu">
+                        <ul>
+                            <li><a href="#" class="subselected">Todos</a></li>
+                            <li><a href="#">Invitar</a></li>
+                            <li><a href="#">Solicitudes Enviadas</a></li>
+                            <li><a href="#">Solicitudes Pendientes</a></li>
+                            <li><a href="#">Grupos</a></li>
+                            <li><a href="#">Explorar</a></li>
+                        </ul>
+                    </div><!--end submenu-->
+                    
+                    <div id="minibuscador"></div><!--end submenu-->
+                
+                </div><!--end otraspciones-->
+                
+                <div id="aficionados">
+                
+                    <div id="miniopciones">
+                         <div class="total-arriba">
+	                            <p>259,875 aficionados</p>
+	                        </div><!--end total-arriba-->
+						
+						<div class="ordenar">
+                        	<p>ordenar por: <a href="#">+ recientes</a> <span>en l&iacute;nea</span></p>
+                    	</div><!--end ordenar-->
+
+					</div><!--end miniopciones-->
+                    
+                    <div class="aficionado">
+                        <div class="display-aficionado">
+                        	<img alt="display aficionado" src="images/display-aficionado.jpg" /></div><!--end display-aficionado-->
+                        
+                        <div class="info-aficionado">
+                            <h4>Aaron Le&oacute;n Fortanel.<span class="ciudad">Chiapas, M&eacute;xico</span> <span class="status"><img src="images/status-icon.gif" /></span></h4>
+                            <p>Liquatu rionsenienis demquid molorpore...</p>
+                            <ul>
+                                <li>34 Amigos</li>
+                                <li>Fotos</li>
+                                <li>A&ntilde;adir como amigo</li>
+                                <li>Escribir mensaje</li>
+								<li class="fav"><img src="images/fav-icon.gif" /></li>
+                            </ul>
+                        </div><!--end info-aficionado-->
+                    </div><!--end aficionado-->
+                    
+                    <div class="aficionado">
+                        <div class="display-aficionado">
+                        	<img alt="display aficionado" src="images/display-aficionado.jpg" /></div><!--end display-aficionado-->
+                        
+                        <div class="info-aficionado">
+                            <h4>Aaron Le&oacute;n Fortanel.<span class="ciudad">Chiapas, M&eacute;xico</span> <span class="status"><img src="images/status-icon.gif" /></span></h4>
+                            <p>Liquatu rionsenienis demquid molorpore...</p>
+                            <ul>
+                                <li>34 Amigos</li>
+                                <li>Fotos</li>
+                                <li>A&ntilde;adir como amigo</li>
+                                <li>Escribir mensaje</li>
+								<li class="fav"><img src="images/fav-icon.gif" /></li>
+                            </ul>
+                        </div><!--end info-aficionado-->
+                    
+                    </div><!--end aficionado-->
+                    
+                    <div class="aficionado">
+                        <div class="display-aficionado">
+                        	<img alt="display aficionado" src="images/display-aficionado.jpg" /></div><!--end display-aficionado-->
+                        
+                        <div class="info-aficionado">
+                            <h4>Aaron Le&oacute;n Fortanel.<span class="ciudad">Chiapas, M&eacute;xico</span> <span class="status"><img src="images/status-icon.gif" /></span></h4>
+                            <p>Liquatu rionsenienis demquid molorpore...</p>
+                            <ul>
+                                <li>34 Amigos</li>
+                                <li>Fotos</li>
+                                <li>A&ntilde;adir como amigo</li>
+                                <li>Escribir mensaje</li>
+								<li class="fav"><img src="images/fav-icon.gif" /></li>
+                            </ul>
+                        </div><!--end info-aficionado-->
+                    
+                    </div><!--end aficionado-->
+
+					<div class="aficionado">
+                        <div class="display-aficionado">
+                        	<img alt="display aficionado" src="images/display-aficionado.jpg" /></div><!--end display-aficionado-->
+                        
+                        <div class="info-aficionado">
+                            <h4>Aaron Le&oacute;n Fortanel.<span class="ciudad">Chiapas, M&eacute;xico</span> <span class="status"><img src="images/status-icon.gif" /></span></h4>
+                            <p>Liquatu rionsenienis demquid molorpore...</p>
+                            <ul>
+                                <li>34 Amigos</li>
+                                <li>Fotos</li>
+                                <li>A&ntilde;adir como amigo</li>
+                                <li>Escribir mensaje</li>
+								<li class="fav"><img src="images/fav-icon.gif" /></li>
+                            </ul>
+                        </div><!--end info-aficionado-->
+                    
+                    </div><!--end aficionado-->
+                    
+                    <div id="minipaginacion">
+                    
+                        <div class="total">
+                            <p>(259,875 aficionados)</p>
+                        </div><!--end total-->
+                        
+                        <div class="paginacion">
+                            <p><span><a href="#">&laquo;</a></span> <a href="#">1</a> 2 3 4 5 6 7 <span>&raquo;</span></p>
+                        </div><!--end paginacion-->
+                        
+                    </div><!--end minipaginacion-->
+                
+                </div><!--end aficionados-->
+                
+            
+            </div><!--end contenido-->
+            
+            <div id="barra">
+            
+                <div id="banner">
+                	<img alt="Banner" src="images/banner.jpg" /></div><!--end banner-->
+                
+                <div class="publicidad">
+                    <h4>Publicidad</h4>
+                    <img alt="publicidad" src="images/publicidad-images.jpg" />
+                    <p>Join Millions of users in an epic fantasy game. Raise an army of Dragons, Knights, and Elves! Beautiful Graphics. Play at Work!</p>
+                </div><!--end publicidad-->
+                                
+                <div id="social-media">
+                    <h4>S&iacute;guenos en:</h4>
+                    <ul>
+                        <li><a title="Facebook" href="#"><img alt="Facebook" src="images/facebook.gif" border="0" /></a></li>
+                        <li><a title="Twitter" href="#"><img alt="Twitter" src="images/twitter.gif" border="0" /></a></li>
+                    </ul>
+                </div><!--end social-media-->
+            
+            </div><!--end barra-->
+        
+        </div><!--end cuerpo-->
+        
+        <div id="pie">
+        
+        	<div id="logos">
+            	<ul>
+                	<li><a title="Milenio.com" href="#"><img alt="Milenio.com" src="images/milenio-logo.gif" border="0" /></a></li>
+                    <li><a title="La Aficion.com" href="#"><img alt="La aficion.com" src="images/la-aficion-logo.gif" border="0" /></a></li>
+                    <li><a title="IQ-ZONE" href="#"><img alt="IQ-ZONE" src="images/iq-zone-logo.gif" border="0" /></a></li>
+                </ul>
+            </div><!--end logos-->
+            
+            <div id="copy">
+            	<p>Copyright &copy; 2010 Q'onda. <span>Powered by <a title="IQ-ZONE" href="#">IQ-ZONE</a></span></p>
+            </div><!--end copy-->
+        
+        </div><!--end pie-->
+        
+    
+    </div><!--end pagina-->
+</div><!--end documento-->
+</body>
+
+</html>
