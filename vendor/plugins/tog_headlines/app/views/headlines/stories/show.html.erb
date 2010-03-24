@@ -1,0 +1,18 @@
+<div class="titleA round clearfix">
+    <%= I18n.t("tog_headlines.plugin_title") %>
+</div>
+<br>
+<div class="internal_padding">
+    <div class="detail detailA">
+        <div class="title"><%= @story.title %></div>
+        <div class="subtitle"><%= @story.summary %></div>
+        <div class="text">
+            <%= @story.body %>
+        </div>    
+    </div> <!-- /.detailA -->
+</div> <!-- /.internal_padding -->
+
+<%= render :partial => '/shared/rating', :locals => {:rateable => @story}%>
+
+
+<%= render :partial => '/shared/comments', :locals => {:comments => @story.comments, :commentable => @story}%>

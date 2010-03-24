@@ -1,0 +1,72 @@
+# {{xxx}}
+en:
+  interface:
+    site:
+      news: "News"
+    admin:
+      news: "News"
+      news_items:
+        published: "Published"
+        drafts: "Drafts"
+        archived: "Archived"  
+  tog_headlines:
+    plugin_name: Headlines
+    plugin_title: News
+    model:
+      published: published
+      draft: draft
+      archived: archived
+      title: Title
+      summary: Summary
+      body: Body
+      editor: Editor
+      created_at: Created at
+      publish_date: Publish date
+      archive_date: Archive date
+      tags: Tags
+      tags_explanation: (separated by ,)
+      state: State
+      main_info: Main info
+      meta_info: Meta info
+      content: Content
+      states:
+        draft: draft
+        published: published
+        archived: archived
+    site:
+      no_news: No news yet
+      item: Story
+      tags: 'Tags:'
+      no_tags_associated: No tags associated
+    member:
+      story_created: Story has been created successfully      
+      error_creating: There was an error creting the story
+    admin:
+      story_created: Story has been created successfully
+      story_deleted: Story has been deleted successfully
+      story_updated: Story has been updated successfully
+      error_creating: There was an error creting the story    
+      not_site_story: Story not found or not a site-wide story            
+      published_stories: Published stories
+      draft_stories: Draft stories
+      archived_stories: Archived stories
+      create: Create story
+      delete: Delete
+      delete_confirmation: Are you sure you want to remove this story?
+      please_wait: Please wait...
+      no_news: No news yet
+      edit: Edit
+      edit_story: Edit story
+      update: Update
+      update_story: Update story
+      create: Create
+      create_story: Create story
+      publish_dates: Publish between dates
+      publish: Publish
+      unpublish: Move to draft
+      publication: Publication
+      from: From
+      to: To
+      not_site_story: Story not found or not site-wide story
+    mailer: 
+      key4: key4

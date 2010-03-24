@@ -1,0 +1,71 @@
+es:
+  interface:
+    site:
+      news: "Noticias"
+    admin:
+      news: "Noticias"
+      news_items:
+        published: "Publicadas"
+        drafts: "Borradores"
+        archived: "Archivadas"  
+  tog_headlines:
+    plugin_name: Headlines    
+    plugin_title: Noticias
+    model:
+      published: publicada
+      draft: borrador
+      archived: archivada
+      title: Título
+      summary: Resúmen
+      body: Cuerpo
+      editor: Editor
+      created_at: Creada el
+      publish_date: Fecha de publicación
+      archive_date: Fecha de archivo
+      tags: Etiquetas
+      tags_explanation: (separadas por ,)      
+      state: Estado
+      main_info: Información principal
+      meta_info: Meta-información
+      content: Contenido
+      states:
+        draft: borrador
+        published: publicado
+        archived: archivado      
+    site:
+      no_news: No hay noticias aún
+      item: Noticia
+      tags: 'Etiquetas:'
+      no_tags_associated: No hay etiquetas asociadas      
+    member:
+      story_created: La noticia ha sido creada satisfactoriamente
+      error_creating: No se pudo crear la noticia
+    admin:
+      story_created: La noticia ha sido creada satisfactoriamente
+      story_deleted: La noticia ha sido borrada satisfactoriamente
+      story_updated: La noticia ha sido actualizada satisfactoriamente
+      error_creating: No se pudo crear la noticia  
+      not_site_story: Noticia que no existe o que no tiene nivel de portal    
+      published_stories: Noticias publicadas
+      draft_stories: Noticias en borrador
+      archived_stories: Noticias archivadas
+      create: Crear noticia
+      delete: Eliminar
+      delete_confirmation: ¿Está seguro de querer eliminar esta historia?
+      please_wait: Por favor espere...
+      no_news: Aún no hay noticias
+      edit: Editar
+      edit_story: Editar noticia
+      update: Actualizar
+      update_story: Actualizar noticia
+      create: Crear
+      create_story: Crear noticia
+      publish_dates: Publicar entre las fechas
+      publish: Publicar
+      unpublish: Mover a borrador
+      publication: Publicación
+      from: Desde
+      to: Hasta      
+      not_site_story: No se ha encontrado la historia o no es una historia a nivel de portal      
+    mailer: 
+      key4: key4      

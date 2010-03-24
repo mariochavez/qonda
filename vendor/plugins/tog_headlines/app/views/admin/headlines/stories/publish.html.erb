@@ -1,0 +1,14 @@
+<h1><%= link_to I18n.t("tog_headlines.plugin_title"), admin_headlines_stories_path%> / <%= link_to @story.title, admin_headlines_story_url(@story) -%></h1>
+
+<br />
+
+<%= error_messages_for :story %>
+<% form_for :story, :url => {:action => :update}, :html => {:method => :put, :id => "story_form"} do |f| -%>
+
+  <%= render :partial => 'form_date', :locals => { :f => f } %>
+  <br />  
+  <div class="actions">
+    <%= submit_tag I18n.t("tog_headlines.admin.update"), {:accesskey => "s", :class=>"button"} %>
+  </div>
+    
+<% end -%>

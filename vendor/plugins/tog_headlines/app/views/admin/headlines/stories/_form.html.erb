@@ -1,0 +1,46 @@
+<% include_javascript "fckeditor/fckeditor" %>
+
+<table class="tableE">
+  <caption><%= I18n.t("tog_headlines.model.main_info") %></caption>
+  <tbody>
+  <tr>
+      <th scope="row"><%= I18n.t("tog_headlines.model.title") %></th>
+      <td nowrap="nowrap"><%=f.text_field :title, :class=>"fieldbox" %></td>
+  </tr>
+  <tr>
+      <th scope="row"><%= I18n.t("tog_headlines.model.tags") %></th>
+      <td nowrap="nowrap">
+        <%= text_field "story", "tag_list", :class => "fieldbox" %>
+        <br/>
+        <span class="helpinfo"><%= I18n.t("tog_headlines.model.tags_explanation") %></span>
+      </td>      
+  </tr>           
+</tbody></table>
+<% if @story.state != 'draft'%>
+<table class="tableE">
+  <caption><%= I18n.t("tog_headlines.admin.publication") %></caption>
+  <tbody>
+    <tr>
+        <th scope="row"><%= I18n.t("tog_headlines.model.publish_date") %></th>
+        <td nowrap="nowrap"><%=f.date_select :publish_date, :class=>"fieldbox" %></td>
+    </tr>
+  <tr>
+      <th scope="row"><%= I18n.t("tog_headlines.model.archive_date") %></th>
+      <td nowrap="nowrap"><%=f.date_select :archive_date, :class=>"fieldbox" %></td>
+  </tr>               
+</tbody></table>
+<% end %>
+<table class="tableE">
+  <caption><%= I18n.t("tog_headlines.model.summary") %></caption>
+  <tbody>
+    <tr>
+        <td nowrap="nowrap"><%= fckeditor_textarea( "story", "summary", :height => '200') %></td>
+    </tr>              
+</tbody></table>
+<table class="tableE">
+  <caption><%= I18n.t("tog_headlines.model.body") %></caption>
+  <tbody>
+    <tr>
+        <td nowrap="nowrap"><%= fckeditor_textarea( "story", "body", :height => '450') %></td>
+    </tr>              
+</tbody></table>
