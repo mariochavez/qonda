@@ -1,0 +1,25 @@
+es:
+  tog_user:
+      sessions:
+          participate: ¡Participa!
+          line1: Comparte tu pasión
+          line2: Crea tu propio grupo y agrega amigos
+          line3: Crea tu blog y comparte fotos y videos
+          register_today: Regístrate hoy
+          register_is_free: ¡Regístrate, es gratis!
+          log_in: Iniciar Sesión
+      
+      model:
+          login: usuario
+              
+  authentication:
+      invalid_email: no parace un correo electrónico válido
+      
+  activerecord:
+      models:
+          user: usuario
+      attributes:
+          user:
+              login: usuario
+              password: contraseña
+              password_confirmation: confirmación de contraseña

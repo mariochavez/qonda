@@ -1,0 +1,73 @@
+<% content_for :login do %>
+<div id="login_area">
+	<% form_tag session_path do -%>
+		<% if Tog::Config["plugins.tog_user.email_as_login"] %>
+        <label for="login"><%= I18n.t("tog_user.sessions.email") %></label>
+        <% else %>
+        <label for="login"><%= I18n.t("tog_user.sessions.login") %></label>
+        <% end %>
+        <%= text_field_tag 'login', nil, :class => "linput", :size => 15 %>
+		
+		<label for="password"><%= I18n.t("tog_user.sessions.password") %></label>
+	      <%= password_field_tag 'password', nil, :class => "linput", :size => 15 %>
+	
+		<%= check_box_tag 'remember_me' %><label for="remember_me"> <%= I18n.t("tog_user.sessions.remember_me") %></label>
+		
+		<%= submit_tag I18n.t('tog_user.sessions.log_in') %><br/>
+		<p>
+			<%= I18n.t("tog_user.sessions.password_forgotten") %>
+			<%= link_to "#{I18n.t('tog_user.sessions.email_you')}", forgot_path %>
+		</p>
+	<% end -%>
+</div><!--end login-->
+<% end %>
+
+<div id="content">
+	
+	<div id="splash">
+		<h2><%= I18n.t('tog_user.sessions.participate') %></h2>
+		<ul>
+			<li><%= I18n.t('tog_user.sessions.line1') %></li>
+			<li><%= I18n.t('tog_user.sessions.line2') %></li>
+			<li><%= I18n.t('tog_user.sessions.line3') %></li>
+		</ul>
+		<p><%= I18n.t('tog_user.sessions.register_today') %> &gt;</p>
+		
+	</div><!--end splash-->
+	
+	<div id="signup">
+		<h3><%= I18n.t('tog_user.sessions.register_is_free') %></h3>
+		<% form_for :user, :url => users_path, :html => {:id => "f_signup", :name => "f_signup" } do |f| -%>
+			<p>
+				<% unless config["plugins.tog_user.email_as_login"] %>
+		            <%= f.label :login, I18n.t('tog_user.model.login') %>
+		            <%= f.text_field :login, :class => "sinput", :size => "10" %>
+		        <% end %>
+			</p>
+			<p>
+				<%= f.label :email, I18n.t('tog_user.model.email') %>
+		        <%= f.text_field :email, :class => "sinput", :size => "40" %>
+			</p>
+			<p>
+				<%= f.label :password, I18n.t('tog_user.model.password') %>
+		        <%= f.password_field :password, :class => "sinput", :size => "15" %>
+			</p>
+			<p>
+				<%= f.label :password_confirmation, I18n.t('tog_user.model.password_confirmation') %>
+		        <%= f.password_field :password_confirmation, :class => "sinput", :size => "15" %>
+			</p>
+	       <% if config["plugins.tog_user.captcha_enabled"] %>
+	          <p>
+	            <label for="code"><%= I18n.t('tog_user.user.type_two_words') %></label>
+	            <%= recaptcha_tags(:display =>{:lang => config["plugins.tog_core.language.default"]}) %>
+	          </p>
+	       <% end %>			
+			<p>
+				<%= submit_tag I18n.t('tog_user.user.signup_title'), :class => "ssubmit" %>
+			</p>
+		<% end %>
+	
+	</div><!--end signup-->
+	
+</div><!--end content-->
+<%= error_messages_for :user %>

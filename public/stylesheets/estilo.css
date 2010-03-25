@@ -1,4 +1,7 @@
 body {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
 	margin: 0;
 	background: #fff url(../images/cabecera-bg.gif) 0 0 repeat-x;
 	font-family: Helvetica, Arial, sans-serif;
@@ -525,3 +528,221 @@ body {
 				color: #fff;
 			}
 
+#welcome {
+	margin:0 auto;
+	width:960px;
+}
+
+#header {
+	height:75px;
+	width:960px;
+}
+
+#title {
+	float:left;
+	height:75px;
+	width:200px;
+}
+
+#title h1 {
+	margin:0;
+	padding:18px 20px 0;
+}
+
+#login_area {
+	float:right;
+	height:75px;
+	text-align:right;
+	width:600px;
+}
+
+#login_area form {
+	margin:15px 20px 0 0;
+	padding:0;
+}
+
+#login_area form label {
+	color:#FFFFFF;
+	font-size:8pt;
+	padding:0 5px 0 0;
+}
+
+#login_area form input.linput {
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-bottomright:5px;
+	-moz-border-radius-topleft:5px;
+	-moz-border-radius-topright:5px;
+	border:medium none;
+	color:#007AB7;
+	font-size:8pt;
+	margin:0 10px 0 0;
+	padding:3px;
+	width:100px;
+}
+
+#login_area form p {
+	color:#F7F7F7;
+	font-size:8pt;
+	margin:0;
+	padding:10px 5px 0 0;
+}
+
+#login_area form p a {
+	color:yellow;
+	text-decoration:none;
+}
+
+#content {
+	overflow:hidden;
+	width:960px;
+}
+
+#splash {
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-bottomright:5px;
+	-moz-border-radius-topleft:5px;
+	-moz-border-radius-topright:5px;
+	background-color:#F7F7F7;
+	border:1px solid #DDDDDD;
+	float:left;
+	height:200px;
+	margin:20px 0 0;
+	width:600px;
+}
+
+#splash h2 {
+	color:#444444;
+	font-weight:normal;
+	margin:0;
+	padding:20px;
+}
+
+#splash ul {
+	margin:0 0 0 20px;
+	padding:0;
+}
+
+#splash ul li {
+	color:#444444;
+	font-size:12pt;
+	line-height:18pt;
+	margin:0 0 0 20px;
+	padding:0;
+}
+
+#splash p {
+	color:#007AB7;
+	font-size:12pt;
+	line-height:18pt;
+	margin:0;
+	padding:20px 20px 0 0;
+	text-align:right;
+}
+
+#splash p span {
+	font-size:20pt;
+	vertical-align:middle;
+}
+
+#signup {
+	float:left;
+	margin:30px 0 0 10px;
+	width:340px;
+}
+
+#signup h3 {
+	color:#444444;
+	font-size:16pt;
+	font-weight:normal;
+	margin:0 0 15px;
+	padding:0 0 5px;
+	text-align:center;
+}
+
+#signup form {
+	margin:0;
+}
+
+#signup form p {
+	margin:0;
+	padding:0 0 10px;
+}
+
+#signup form p label {
+	color:#444444;
+	float:left;
+	font-size:8pt;
+	padding:4px 5px 0 0;
+	text-align:right;
+	width:120px;
+}
+
+#signup form p input.sinput {
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-bottomright:5px;
+	-moz-border-radius-topleft:5px;
+	-moz-border-radius-topright:5px;
+	border:1px solid #CCCCCC;
+	color:#007AB7;
+	font-size:8pt;
+	margin:0 10px 0 0;
+	padding:3px;
+	width:180px;
+}
+
+#signup form p input.ssubmit {
+	float:right;
+	margin:0 30px 0 0;
+}
+
+#users {
+	margin:20px 0 0;
+	width:940px;
+}
+
+#users h4 {
+	border-bottom:1px solid #DDDDDD;
+	color:#444444;
+	font-size:10pt;
+	font-weight:normal;
+	margin:0 0 15px;
+	padding:0 0 5px;
+}
+
+#users h4 span {
+	color:#CCCCCC;
+	padding:0 0 0 5px;
+}
+
+.grid {
+	border-bottom:1px solid #DDDDDD;
+	padding:0 0 10px 10px;
+}
+
+#footer {
+	height:52px;
+	width:940px;
+}
+
+#copyright {
+	float:right;
+	height:52px;
+	width:360px;
+}
+
+#copyright p {
+	color:#CCCCCC;
+	font-size:8pt;
+	margin:18px 10px 0 0;
+	padding:0;
+	text-align:right;
+}
+
+#copyright p span {
+	padding-left:10px;
+}
+
+#copyright p span a {
+	color:#CCCCCC;
+	text-decoration:none;
+}

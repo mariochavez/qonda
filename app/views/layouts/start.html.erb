@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title><%=config['plugins.tog_core.site.name']%></title>
+<meta name="language" content="<%=I18n.locale%>" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="title" content="<%=config['plugins.tog_core.site.name']%>"/>
+<meta name="title" content="<%=config['plugins.tog_core.site.name']%>" />
+<meta name="description" content="Red social para aficionados del deporte" />
+<meta name="keywords" content="qonda, aficionados, qondaaficionados" />
+<meta name="author" content="Linking Paths" />
+
+<link rel="icon" href="/tog_core/images/favicon.ico" />
+
+<!--
+<link href="/tog_core/stylesheets/template.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="/tog_core/stylesheets/style.css"    rel="stylesheet" media="screen" type="text/css" />
+<link href="/tog_core/stylesheets/pages.css"    rel="stylesheet" media="screen" type="text/css" />
+-->
+<link href="/stylesheets/estilo.css"    rel="stylesheet" media="screen" type="text/css" />
+
+<!--[if lt IE 7.]>
+<link rel="stylesheet" type="text/css" media="screen" href="/tog_core/stylesheets/ie6.css" />
+<![endif]-->
+
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" media="screen" href="/tog_core/stylesheets/ie7.css" />
+<![endif]-->
+
+<%= inject_autodiscovery %>
+<%= inject_js %>
+<%= inject_css %>
+
+<link rel="start" type="text/html" href="/" title="Página de inicio" />
+
+</head>
+
+<body>
+	<div id="welcome">
+		
+		<div id="header">
+			
+			<div id="title">
+				<h1><a href="/" title="Q'aficionados!"><img border="0" src="images/qonda-logo.gif" alt="Q'aficionados!"></a></h1>
+			</div><!--end title-->
+			
+			<%= yield :login %>
+			
+		</div><!--end header-->
+		<div id="flash">
+			<%= render_flash_messages %>
+		</div>
+		<%= yield %>
+		
+		<div id="users">
+			<h4>Aficionados <span>(123,456 aficionados)</span></h4>
+			
+			<div class="grid">
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>	
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>	
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+			</div><!--end grid-->
+						
+		</div><!--end members-->
+		
+		<div id="footer">
+			
+			<div id="copyright">
+				<p>&copy; 2010 Q'ondaficionados!</p>
+			</div>
+			
+		</div><!--end footer-->
+		
+		
+	</div><!--end welcome-->
+</body>
+</html>
