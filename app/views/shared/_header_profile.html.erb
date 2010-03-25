@@ -1,0 +1,4 @@
+<div id="perfil">
+	<%=icon_for_profile(current_user.profile, 'small')%>
+	<h4><%= I18n.t("tog_core.views.shared.header_options.greeting")%> <%= current_user.profile.full_name %><br /><span class="perfil"><%= link_to I18n.t("tog_core.views.shared.header_options.my_profile"), edit_member_profile_path(current_user.profile) -%></span> | <span class="cerrar"><%= link_to I18n.t("tog_core.views.shared.header_options.logout"), logout_path -%></span></h4>
+</div><!--end perfil-->

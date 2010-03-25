@@ -54,43 +54,13 @@
 		<%= yield %>
 		
 		<div id="users">
-			<h4>Aficionados <span>(123,456 aficionados)</span></h4>
+			<h4><%= I18n.t("tog_core.views.home.index.featured_users") %> <span>(<%=last_users.count %> aficionados)</span></h4>
 			
 			<div class="grid">
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>	
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>	
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
-				<a href="#"><img border="0" src="images/display.jpg" alt="usuario"></a>
+				<% last_users.each do |user|%>
+                    <%=icon_for_profile(user.profile, 'small')%>
+                  <%end %>
+
 			</div><!--end grid-->
 						
 		</div><!--end members-->

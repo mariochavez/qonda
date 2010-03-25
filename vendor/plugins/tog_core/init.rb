@@ -5,7 +5,7 @@ require_plugin 'acts_as_scribe'
 require "will_paginate"
 
 
-Tog::Plugins.settings :tog_core,  'language.default'          => "en",
+Tog::Plugins.settings :tog_core,  'language.default'          => "es",
                                   'host.name'                 => "0.0.0.0",
                                   'host.port'                 => 3000,
                                   'site.name'                 => "toginstallation.com",
