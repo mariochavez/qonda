@@ -32,7 +32,7 @@ body {
 
 	#perfil {
 		float: left;
-		width: 200px;
+		width: 250px;
 		height: 50px;
 	}
 	
@@ -40,7 +40,7 @@ body {
 			float: left;
 			width: 40px;
 			height: 40px;
-			margin: 8px 8px 0 0;
+			margin: 5px 8px 0 0;
 		}
 		
 		#perfil h4 {
@@ -69,6 +69,7 @@ body {
 		float: left;
 		width: 200px;
 		height: 50px;
+		margin: 0 0 0 20px;
 	}
 	
 	#iconos ul {
@@ -480,6 +481,96 @@ body {
 			list-style: none;
 		}
 
+
+
+/*---<usuariosDestacados, muro />---*/
+
+#usuariosDestacados, #grupos, #muro {
+	margin: 20px 0;
+}
+
+	#usuariosDestacados h4, #grupos h4, #muro h4 {
+		margin: 0;
+		padding: 5px 10px;
+		background-color: #007AB7;
+		font-size: 10pt;
+		text-transform: uppercase;
+		color: #fff;
+	}
+	
+	#usuariosDestacados ul, #grupos ul, #muro ul {
+		width: 100%;
+		overflow: hidden;
+		margin: 0;
+		padding: 0 5px;
+		border-bottom: 1px dotted #ddd;
+	}
+
+	#usuariosDestacados ul li {
+		float: left;
+		margin: 0;
+		padding: 10px 5px 5px 5px;
+		list-style: none;
+	}
+	
+	#grupos ul li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		font-size: 10pt;
+		color: #444;
+	}
+	
+	#muro ul li {
+		height: 25px;
+		margin: 0;
+		padding: 10px;
+		list-style: none;
+		font-size: 10pt;
+		border-bottom: 1px dotted #ddd;
+		color: #444;
+	}
+	
+		#usuariosDestacados ul li img {
+			border: 0;
+		}
+		
+		#grupos ul li img {
+			float: left;
+			margin: 10px 10px 10px 5px;
+			border: 0;
+		}
+	
+		#muro ul li img {
+			float: left;
+			margin: 0 10px 0 0;
+			border: 0;
+		}
+		
+		#grupos h5 {
+			margin: 0;
+			padding: 20px 0 5px 0;
+			font-size: 12pt;
+			font-weight: normal;
+			color: #444;
+		}
+		
+		#grupos p {
+			margin: 0;
+			font-size: 10pt;
+			line-height: 15pt;
+			color: #666;
+		}
+
+		#muro ul li .text {
+			padding: 5px 0 0 0;
+		} 
+	
+			#grupos a, #muro ul li .text a {
+				text-decoration: none;
+				color: #007ab7;
+			}
+
 /*---<pie />---*/
 
 #pie {
@@ -568,16 +659,14 @@ body {
 }
 
 #login_area form input.linput {
-	-moz-border-radius-bottomleft:5px;
-	-moz-border-radius-bottomright:5px;
-	-moz-border-radius-topleft:5px;
-	-moz-border-radius-topright:5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 	border:medium none;
 	color:#007AB7;
 	font-size:8pt;
 	margin:0 10px 0 0;
 	padding:3px;
-	width:100px;
+	width:120px;
 }
 
 #login_area form p {
@@ -592,21 +681,35 @@ body {
 	text-decoration:none;
 }
 
+.ok, .notice {
+	margin: 20px 20px 0 0;
+	padding: 5px 10px;
+	border: 1px dotted #0C0;
+	font-size: 8pt;
+	color: #0C0;
+}
+
+.error {
+	margin: 20px 20px 0 0;
+	padding: 5px 10px;
+	border: 1px dotted #f30;
+	font-size: 8pt;
+	color: #f30;
+}
+
 #content {
 	overflow:hidden;
 	width:960px;
 }
 
 #splash {
-	-moz-border-radius-bottomleft:5px;
-	-moz-border-radius-bottomright:5px;
-	-moz-border-radius-topleft:5px;
-	-moz-border-radius-topright:5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 	background-color:#F7F7F7;
 	border:1px solid #DDDDDD;
 	float:left;
 	height:200px;
-	margin:20px 0 0;
+	margin:20px 0 0 0;
 	width:600px;
 }
 
@@ -678,10 +781,8 @@ body {
 }
 
 #signup form p input.sinput {
-	-moz-border-radius-bottomleft:5px;
-	-moz-border-radius-bottomright:5px;
-	-moz-border-radius-topleft:5px;
-	-moz-border-radius-topright:5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 	border:1px solid #CCCCCC;
 	color:#007AB7;
 	font-size:8pt;
@@ -695,18 +796,60 @@ body {
 	margin:0 30px 0 0;
 }
 
+
+.errorExplanation {
+	width: 940px;
+	margin: 20px 0;
+	border: 1px dotted #f30;
+}
+
+	.errorExplanation h2 {
+		margin: 0;
+		padding: 20px 20px 10px 20px;
+		font-size: 12pt;
+		font-weight: normal;
+		color: #f30;
+	}
+
+		.errorExplanation h2:first-letter {
+			text-transform: uppercase;
+		}
+	
+	.errorExplanation p {
+		margin: 0;
+		padding: 0 20px;
+		font-size: 8pt;
+		color: #f30;
+	}
+	
+	.errorExplanation ul {
+		margin: 10px 0 20px 35px;
+		padding: 0;
+	}
+	
+		.errorExplanation ul li {
+			margin: 0;
+			padding: 0 0 5px 0;
+			font-size: 8pt;
+			color: #f30;
+		}
+		
+			.errorExplanation ul li:first-letter {
+				text-transform: uppercase;
+			}
+
 #users {
 	margin:20px 0 0;
 	width:940px;
 }
 
 #users h4 {
-	border-bottom:1px solid #DDDDDD;
+	border-bottom:2px solid #DDDDDD;
 	color:#444444;
 	font-size:10pt;
 	font-weight:normal;
-	margin:0 0 15px;
-	padding:0 0 5px;
+	margin: 0 0 10px 0;
+	padding:0 0 5px 0;
 }
 
 #users h4 span {
@@ -715,11 +858,11 @@ body {
 }
 
 .grid {
-	border-bottom:1px solid #DDDDDD;
-	padding:0 0 10px 10px;
+	padding:0 0 6px 10px;
 }
 
 #footer {
+	border-top:1px solid #DDDDDD;
 	height:52px;
 	width:940px;
 }
@@ -746,3 +889,62 @@ body {
 	color:#CCCCCC;
 	text-decoration:none;
 }
+
+/*---<forget />---*/
+
+.forgot {
+	width: 940px;
+	margin: 20px 0;
+}
+
+	.forgot h3 {
+		margin: 0;
+		font-size: 16pt;
+		font-weight: normal;
+		color: #444;
+	}
+
+	.forgot p {
+		margin: 0;
+		padding: 5px;
+		font-size: 10pt;
+		color: #444;
+	}
+
+#area_signup {
+	width: 940px;
+	border-top: 2px solid #ddd;
+	border-bottom: 1px solid #ddd;	
+}
+
+	#area_signup form {
+		margin: 0;
+		padding: 0;
+	} 
+
+		#area_signup form fieldset {
+			display: block;
+			margin: 0 auto;
+			width: 410px;
+			border: none;
+		}
+		
+			#area_signup form fieldset label {
+				float: left;
+				width: 120px;
+				padding: 5px 5px 0 0;
+				font-size: 8pt;
+				text-align: right;
+				color: #444;
+			}
+		
+			#area_signup form fieldset input.fieldbox {
+				width: 200px;
+				padding: 3px;
+				-moz-border-radius: 5px;
+				-webkit-border-radius: 5px;
+				border: 1px solid #ddd;
+				font-size: 8pt;
+				color:#007AB7;
+			}
+		
