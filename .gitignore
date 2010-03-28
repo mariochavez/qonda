@@ -18,3 +18,4 @@ vendor/gems
 vendor/bundler_gems
 .bundle/**
 log/**
+database.yml
