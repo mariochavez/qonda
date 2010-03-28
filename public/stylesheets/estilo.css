@@ -485,6 +485,22 @@ body {
 
 /*---<usuariosDestacados, muro />---*/
 
+#left {
+	width: 150px;
+	float: left;
+}
+
+#center {
+	width: 640px;
+	margin: 0px 10px 0px 160px;
+}
+
+#right {
+	width: 150px;
+	float: right;
+	margin: 0px;	
+}
+
 .area {
 	margin: 20px 0;
 }
@@ -494,6 +510,10 @@ body {
 	font-size: 10pt;
 	line-height: 15pt;
 	color: #666;
+}
+
+.area p span.blue {
+	color: #007ab7
 }
 
 .area a, .area a:hover { 
@@ -519,7 +539,6 @@ body {
 	overflow: hidden;
 	margin: 0;
 	padding: 0 5px;
-	width: 150px;
 }
 
 .area ul li {
@@ -531,8 +550,8 @@ body {
 }
 
 .area ul li span {
-	margin: 0px 0px 0px -10px;
-	font-weight: bold;
+	/*margin: 0px 0px 0px -10px;
+	font-weight: bold;*/
 }
 
 .area ul li img {
@@ -540,6 +559,9 @@ body {
 	border: 0;
 }
 
+.area ul li p a img {
+	margin: 0px 0px 0px 25px;
+}
 #usuariosDestacados, #grupos, #muro {
 	margin: 20px 0;
 }

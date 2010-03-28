@@ -1,54 +1,26 @@
-<div id="myprofile" class="area">	
-	<h4><%= I18n.t("tog_user.interface.my_profile") %></h4>
-	<div id="usuarioinfo">
-		<%=icon_for_profile(current_user.profile, 'medium')%>
-		<p>
-			<%= link_to current_user.profile.full_name, profile_path(current_user.profile)%><br/>
-			<span>Seguidores</span> <a href="#">5</a><br/>
-			<span>Amigos</span> <a href="#">5</a>
-		</p>
+<div id="left">
+	<%= render :partial => "left" %>
+</div>
+
+<div id="right">
+	<div id="advertising" class="area">
+		<img alt="publicidad" src="/images/banner.jpg" />
+	</div>
+	
+	<div id="news" class="area">
+		<h4><%= I18n.t("tog_core.interface.news") %></h4>
+		<ul>
+		<% last_stories.each do |story| %>
+			<li>
+				<%= link_to story.title, headlines_story_path(story) %><br/>
+				<%= story.created_at.strftime('(%d/%m/%y)')%><br/>
+				<%= story.summary %>
+			</li>
+		<% end %>
+		</ul>
 	</div>
 </div>
 
-<div id="friends" class="area">
-	<h4><%= I18n.t("tog_user.interface.friends") %></h4>
-	<ul>
-	<% current_user.profile.some_friends.each do |profile| %>
-		<li>
-			<%=link_to icon_for_profile(profile, 'small'), profile_path(profile)%>
-			<span><%=link_to profile.user.login, profile_path(profile)%></span>
-		</li>
-	<% end %>
-	</ul>
+<div id="center">
+	<%= render :partial => "center" %>
 </div>
-
-<div id="newerUsers" class="area">
-	<h4><%= I18n.t("tog_core.interface.new_users") %></h4>
-	<ul>
-    <% last_users.each do |user|%>
-        <li><%=link_to icon_for_profile(user.profile, 'small'), profile_path(user.profile)%></li>
-    <%end %>
-    </ul>
-</div><!--end usuariosDestacados-->
-
-
-<div id="grupos">
-	<h4><%= I18n.t("tog_core.views.home.index.groups") %></h4>
-	<ul>
-    <% last_groups.each do |group| %>
-    	<li>
-        	<%= link_to image_for_group(group, 'medium'), group_path(group) %>
-            <h5><%= link_to group.name, group_path(group) %></h5>
-            <p><%=group.description%></p>
-        </li>
-    <%end %>
-    </ul>
-</div><!--end grupos-->
-ghs.google.com
-
-<div id="muro">
-	<h4><%= I18n.t("tog_core.views.home.index.the_public_continuum") %></h4>
-	<ul>
-    <%= public_continuum(20) %>
-    </ul>
-</div><!--end muro-->

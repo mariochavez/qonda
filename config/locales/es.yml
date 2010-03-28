@@ -14,11 +14,17 @@ es:
           
       interface:
           my_profile: mi perfil
-          friends: amigos
+          my_friends: mis amigos
+          my_groups: mis grupos
+          activity: actividad reciente
+          my_teams: mis equipos
    
   tog_core:
       interface:       
         new_users: nuevos usuarios
+        new_groups: nuevos grupos
+        videos: videos
+        news: noticias
               
   authentication:
       invalid_email: no parace un correo electrónico válido
