@@ -11,6 +11,14 @@ es:
       
       model:
           login: usuario
+          
+      interface:
+          my_profile: mi perfil
+          friends: amigos
+   
+  tog_core:
+      interface:       
+        new_users: nuevos usuarios
               
   authentication:
       invalid_email: no parace un correo electrónico válido

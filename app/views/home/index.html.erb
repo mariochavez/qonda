@@ -1,5 +1,29 @@
-<div id="usuariosDestacados">
-	<h4><%= I18n.t("tog_core.views.home.index.featured_users") %></h4>
+<div id="myprofile" class="area">	
+	<h4><%= I18n.t("tog_user.interface.my_profile") %></h4>
+	<div id="usuarioinfo">
+		<%=icon_for_profile(current_user.profile, 'medium')%>
+		<p>
+			<%= link_to current_user.profile.full_name, profile_path(current_user.profile)%><br/>
+			<span>Seguidores</span> <a href="#">5</a><br/>
+			<span>Amigos</span> <a href="#">5</a>
+		</p>
+	</div>
+</div>
+
+<div id="friends" class="area">
+	<h4><%= I18n.t("tog_user.interface.friends") %></h4>
+	<ul>
+	<% current_user.profile.some_friends.each do |profile| %>
+		<li>
+			<%=link_to icon_for_profile(profile, 'small'), profile_path(profile)%>
+			<span><%=link_to profile.user.login, profile_path(profile)%></span>
+		</li>
+	<% end %>
+	</ul>
+</div>
+
+<div id="newerUsers" class="area">
+	<h4><%= I18n.t("tog_core.interface.new_users") %></h4>
 	<ul>
     <% last_users.each do |user|%>
         <li><%=link_to icon_for_profile(user.profile, 'small'), profile_path(user.profile)%></li>
@@ -20,7 +44,7 @@
     <%end %>
     </ul>
 </div><!--end grupos-->
-
+ghs.google.com
 
 <div id="muro">
 	<h4><%= I18n.t("tog_core.views.home.index.the_public_continuum") %></h4>
