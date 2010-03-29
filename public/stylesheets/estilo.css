@@ -526,11 +526,52 @@ body {
 	padding: 5px;
 }
 
+#mygroups ul li, #newerGroups ul li {
+	border-bottom: 1px dotted #ccc;
+}
+
+#usuarioinfo img {
+	display: block;
+	margin: 5px auto;
+	border: none;
+}
+
+#mygroups img, #newerGroups img {
+	/*display: block;*/
+	margin: 5px auto;
+	border: none;
+}
+
+#newerUsers ul {
+	margin: 0 0 0 10px;
+	padding: 5px 0 0 0;
+}
+
+#usuarioinfo p, #mygroups p, #newerGroups p {
+	font-size: 10pt;
+	text-align: center;
+}
+
+#activity .image {
+	float: left;
+}
+
+#activity ul li {
+	width: 620px;
+	border-bottom: 1px dotted #ccc;
+}
+
+#activity ul li .text {
+	padding: 5px 0 0 0;
+	color: #333;
+}
+
 .area h4 {
 	margin: 0;
-	padding: 5px 10px;
-	background-color: #007AB7;
+	padding: 3px 10px;
+	background: #007AB7 url(../images/h4-bg.gif) 0 0 repeat-x;
 	font-size: 10pt;
+	font-weight: normal;
 	text-transform: uppercase;
 	color: #fff;
 }
@@ -562,6 +603,9 @@ body {
 .area ul li p a img {
 	margin: 0px 0px 0px 25px;
 }
+
+
+
 #usuariosDestacados, #grupos, #muro {
 	margin: 20px 0;
 }
