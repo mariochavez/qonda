@@ -526,11 +526,52 @@ body {
 	padding: 5px;
 }
 
+#mygroups ul li, #newerGroups ul li {
+	border-bottom: 1px dotted #ccc;
+}
+
+#usuarioinfo img {
+	display: block;
+	margin: 5px auto;
+	border: none;
+}
+
+#mygroups img, #newerGroups img {
+	/*display: block;*/
+	margin: 5px auto;
+	border: none;
+}
+
+#newerUsers ul {
+	margin: 0 0 0 10px;
+	padding: 5px 0 0 0;
+}
+
+#usuarioinfo p, #mygroups p, #newerGroups p {
+	font-size: 10pt;
+	text-align: center;
+}
+
+#activity .image {
+	float: left;
+}
+
+#activity ul li {
+	width: 620px;
+	border-bottom: 1px dotted #ccc;
+}
+
+#activity ul li .text {
+	padding: 5px 0 0 0;
+	color: #333;
+}
+
 .area h4 {
 	margin: 0;
-	padding: 5px 10px;
-	background-color: #007AB7;
+	padding: 3px 10px;
+	background: #007AB7 url(../images/h4-bg.gif) 0 0 repeat-x;
 	font-size: 10pt;
+	font-weight: normal;
 	text-transform: uppercase;
 	color: #fff;
 }
@@ -572,6 +613,9 @@ body {
 .area ul li p a img {
 	margin: 0px 0px 0px 25px;
 }
+
+
+
 #usuariosDestacados, #grupos, #muro {
 	margin: 20px 0;
 }
@@ -657,6 +701,105 @@ body {
 				text-decoration: none;
 				color: #007ab7;
 			}
+
+.screen {
+	width: 640px;
+	overflow: hidden;
+}
+
+	#screenimage {
+		float: left;
+		width: 300px;
+		height: 170px;
+		padding: 10px;
+	}
+	
+	#otherscreens {
+		float: left;
+		width: 320px;
+		margin: 0;
+	}
+	
+		.otherscreen {
+			width: 320px;
+			height: 77px;
+			border-bottom: 1px dotted #ccc;
+		}
+	
+		.otherscreen a {
+			display: block;
+			width: 320px;
+			height: 57px;
+			padding: 10px 0;
+		}
+		
+		.otherscreen a:hover {
+			background-color: #eee;
+		}
+	
+		.otherscreen img {
+			float: left;
+			margin: 0 10px;
+		}
+		
+		.otherscreen p {
+			margin: 0;
+			padding: 0 10px 0 0;
+			font-size: 8pt;
+		}
+
+.team {
+	float: left;
+	width: 140px;
+	padding: 0 10px;
+	border-bottom: 1px dotted #ccc;
+}
+
+h5.teamflag {
+	margin: 20px 0;
+	font-size: 12pt;
+	font-weight: normal;
+	color: #007ab7;
+}
+
+h5.teamflag img {
+	vertical-align: middle;
+}
+
+table.teampoints {
+	margin: 0 0 5px 0;
+	width: 140px;
+}
+
+table.teampoints tr td {
+	padding: 5px 0;
+	font-size: 10pt;
+	border-bottom: 1px dotted #eee;
+	color: #007ab7;
+} 
+
+table.teampoints tr td.pts {
+	text-align: right;
+	color: #444;
+}
+
+div.teamdetails h5 {
+	margin: 0;
+	padding: 0 0 10px 0;
+	font-size: 10pt;
+	font-weight: normal;
+	color: #007ab7;	
+}
+
+div.teamdetails p {
+	margin: 0;
+	padding: 0 0 10px 0;
+	font-size: 8pt;
+	line-height: 12pt;
+	text-align: justify;
+	color: #444;
+}
+
 
 /*---<pie />---*/
 
