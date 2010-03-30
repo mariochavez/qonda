@@ -13,8 +13,8 @@
 		<% last_stories.each do |story| %>
 			<li>
 				<%= link_to story.title, headlines_story_path(story) %><br/>
-				<%= story.created_at.strftime('(%d/%m/%y)')%><br/>
-				<%= story.summary %>
+				<span class="box"><%= story.created_at.strftime('%d/%m/%y %H:%M')%></span>
+				<%=story.summary %>
 			</li>
 		<% end %>
 		</ul>

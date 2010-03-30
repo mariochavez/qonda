@@ -508,7 +508,7 @@ body {
 .area p {
 	margin: 0;
 	font-size: 10pt;
-	line-height: 15pt;
+	line-height: 12pt;
 	color: #666;
 }
 
@@ -552,6 +552,16 @@ body {
 .area ul li span {
 	/*margin: 0px 0px 0px -10px;
 	font-weight: bold;*/
+}
+
+.area ul li span.box {
+	color: #FFFFFF;
+	font-size: 8pt;
+	background-color: #A0A0A0;
+	padding: 2px;
+	margin: 5px;
+	display: block;
+	width:75px;
 }
 
 .area ul li img {
