@@ -18,6 +18,7 @@ es:
           my_groups: mis grupos
           activity: actividad reciente
           my_teams: mis equipos
+          profile: perfil
    
   tog_core:
       interface:       
