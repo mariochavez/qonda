@@ -28,6 +28,8 @@
 <link rel="stylesheet" type="text/css" media="screen" href="/tog_core/stylesheets/ie7.css" />
 <![endif]-->
 
+<% include_javascript 'flowplayer-3.1.4.min' %>
+
 <%= inject_autodiscovery %>
 <%= inject_js %>
 <%= inject_css %>
@@ -45,11 +47,13 @@
 			<%= render :partial => 'shared/notification_area' %>
 
             <div id="titulo">
-            	<h1><a href="#"><img alt="Q'ondaficionados!" src="images/qondaficionados-logo.gif" border="0" /></a></h1>
+            	<h1><a href="#"><%= image_tag 'qondaficionados-logo.gif', :border => '0' %>
+	</a></h1>
             </div><!--end titulo-->
             
             <div id="qondatv">
-            	<img alt="qondatv" src="images/qondatv-banner.jpg" /></div><!--end qondatv-->           
+				<%= image_tag 'qondatv-banner.jpg' %>
+            </div><!--end qondatv-->           
         
         </div><!--end cabecera-->
         
@@ -65,9 +69,9 @@
         
         	<div id="logos">
             	<ul>
-                	<li><a title="Milenio.com" href="#"><img alt="Milenio.com" src="images/milenio-logo.gif" border="0" /></a></li>
-                    <li><a title="La Aficion.com" href="#"><img alt="La aficion.com" src="images/la-aficion-logo.gif" border="0" /></a></li>
-                    <li><a title="IQ-ZONE" href="#"><img alt="IQ-ZONE" src="images/iq-zone-logo.gif" border="0" /></a></li>
+                	<li><a title="Milenio.com" href="#"><%= image_tag 'milenio-logo.gif', :border => '0' %></a></li>
+                    <li><a title="La Aficion.com" href="#"><%= image_tag 'la-aficion-logo.gif', :border => '0' %></a></li>
+                    <li><a title="IQ-ZONE" href="#"><%= image_tag 'iq-zone-logo.gif', :border => '0' %></a></li>
                 </ul>
             </div><!--end logos-->
             
