@@ -19,3 +19,4 @@ vendor/bundler_gems
 .bundle/**
 log/**
 database.yml
+public/system/groups/images/**

@@ -26,6 +26,11 @@ es:
         new_groups: nuevos grupos
         videos: videos
         news: noticias
+        join: se ha unido a
+        create: a creado
+        received: te ha enviado un mensaje
+        group: el grupo
+        social_network: qOnda Aficionados
               
   authentication:
       invalid_email: no parace un correo electrónico válido
