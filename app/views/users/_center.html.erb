@@ -15,7 +15,7 @@
 					
 			<div class="otherscreen">
 				<a href="#">
-				<img alt="otherscreen" src="images/video1-mini.jpg" border="0" />
+				<%= image_tag 'video1-mini.jpg', :border => '0' %>	
 				<p>Chivas golea a Santos, 6-1 en el Jalisco en el Bicentenario 2010.</p>				
 				</a>
 			</div><!--end otherscreen-->
@@ -23,21 +23,21 @@
 
 			<div class="otherscreen">
 				<a href="#">
-				<img alt="otherscreen" src="images/video2-mini.jpg" border="0" />
+				<%= image_tag 'video2-mini.jpg', :border => '0' %>
 				<p>Monterrey en el volc&aacute;n no pudo con los Jaguares y empataron 1-1.</p>				
 				</a>
 			</div><!--end otherscreen-->
 		
 			<div class="otherscreen">
 				<a href="#">
-				<img alt="otherscreen" src="images/video3-mini.jpg" border="0" />
+				<%= image_tag 'video3-mini.jpg', :border => '0' %>
 				<p>El Am&eacute;rica no puede en Puebla y 'Chelis' se queda, el Am&eacute;rica recibi&oacute; 2 y solo anot&oacute; 1.</p>				
 				</a>
 			</div><!--end otherscreen-->
 
 			<div class="otherscreen">
 				<a href="#">
-				<img alt="otherscreen" src="images/video4-mini.jpg" border="0" />
+				<%= image_tag 'video4-mini.jpg', :border => '0' %>
 				<p>Ya est&aacute; la pre-lista de la selecci&oacute;n, 18 jugadores de la liga parten a una gira a Europa.</p>				
 				</a>
 			</div><!--end otherscreen-->
@@ -49,19 +49,14 @@
 	
 </div>
 
-<div id="activity" class="area">
-	<h4><%= I18n.t("tog_user.interface.activity") %></h4>
-	<ul>
-    	<%= public_continuum 20 %>
-    </ul>
-</div>
+<%= render :partial => 'shared/activity' %>
 
 <div id="my_teams" class="area">
 	<h4><%= I18n.t("tog_user.interface.my_teams") %></h4>
 	
 	<div class="team">
 	
-		<h5 class="teamflag"><img alt="M&eacute;xico" src="images/mexico-flag.png" /> M&eacute;xico</h5><!--end teamflag-->
+		<h5 class="teamflag"><%= image_tag 'mexico-flag.png', :border => '0' %> M&eacute;xico</h5><!--end teamflag-->
 		<table class="teampoints" cellspacing="0">
 			<tbody>
 				<tr>
@@ -90,7 +85,7 @@
 	
 	<div class="team">
 	
-		<h5 class="teamflag"><img alt="Holanda" src="images/neatherland-flag.png" /> Holanda</h5><!--end teamflag-->
+		<h5 class="teamflag"><%= image_tag 'neatherland-flag.png', :border => '0' %> Holanda</h5><!--end teamflag-->
 		<table class="teampoints" cellspacing="0">
 			<tbody>
 				<tr>
@@ -119,7 +114,7 @@
 
 	<div class="team">
 	
-		<h5 class="teamflag"><img alt="Espa&ntilde;a" src="images/spain-flag.png" /> Espa&ntilde;a</h5><!--end teamflag-->
+		<h5 class="teamflag"><%= image_tag 'spain-flag.png', :border => '0' %> Espa&ntilde;a</h5><!--end teamflag-->
 		<table class="teampoints" cellspacing="0">
 			<tbody>
 				<tr>
@@ -148,7 +143,7 @@
 	
 	<div class="team">
 	
-		<h5 class="teamflag"><img alt="Portugal" src="images/portugal-flag.png" /> Portugal</h5><!--end teamflag-->
+		<h5 class="teamflag"><%= image_tag 'portugal-flag.png', :border => '0' %> Portugal</h5><!--end teamflag-->
 		<table class="teampoints" cellspacing="0">
 			<tbody>
 				<tr>

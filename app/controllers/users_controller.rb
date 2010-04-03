@@ -1,5 +1,15 @@
 class UsersController < ApplicationController
   layout 'start'
+  before_filter :authorize
+  
+  def index
+    @user = current_user
+    
+    respond_to do |format|
+      format.html { render :layout => 'application'}# index.html.erb
+      format.xml  { render :xml => @profiles }
+    end  
+  end
   
   def create
     # cookies.delete :auth_token

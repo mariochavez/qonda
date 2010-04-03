@@ -1,14 +1,10 @@
-<div id="advertising" class="area">
-	<img alt="publicidad" src="/images/banner.jpg" />
-</div>
-
 <div id="news" class="area">
 	<h4><%= I18n.t("tog_core.interface.news") %></h4>
 	<ul>
 	<% last_stories.each do |story| %>
 		<li>
 			<%= link_to story.title, headlines_story_path(story) %><br/>
-			<span class="box"><%= story.created_at.strftime('%d/%m/%y %H:%M')%></span>
+			<span class="box"><%= distance_of_time_in_human story.created_at%></span>
 			<%=story.summary %>
 		</li>
 	<% end %>

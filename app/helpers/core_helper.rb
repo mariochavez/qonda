@@ -43,7 +43,15 @@ module CoreHelper
   class Timeline
     attr_accessor :profile, :action, :item_type, :item_id, :date
   end
-  
+
+  def distance_of_time_in_human(date)
+    if (Time.now - date) < 1.day
+      distance_of_time_in_words_to_now date
+    else
+      I18n.l date.getlocal, :format => 'long'
+    end
+  end
+    
   private
   
   def resolve_action(action, type, id)
@@ -71,13 +79,5 @@ module CoreHelper
     end
 
     "#{current_action} #{action_type}"
-  end
-  
-  def distance_of_time_in_human(date)
-    if (Time.now - date) < 1.day
-      distance_of_time_in_words_to_now date
-    else
-      I18n.l date.getlocal, :format => 'long'
-    end
   end
 end
