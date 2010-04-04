@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   layout 'start'
-  before_filter :authorize
+  before_filter :authorize, :except => [:create]
   
   def index
     @user = current_user
