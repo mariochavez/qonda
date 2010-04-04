@@ -1179,4 +1179,99 @@ div.teamdetails p {
 				font-size: 8pt;
 				color:#007AB7;
 			}
+
+/*---/ESTILO DE GROUPS/---*/
+
+#detailgroup, #taggroup {
+	float: left;
+	width: 790px;
+	margin: 20px 0 0 0;
+}		
+
+	#detailgroup h4, #taggroup h2 {
+		margin: 0;
+		padding: 3px 10px;
+		background: #007AB7 url(../images/h4-bg.gif) 0 0 repeat-x;
+		font-size: 10pt;
+		font-weight: normal;
+		text-transform: uppercase;
+		color: #fff;
+	}
+	
+		.detail img, .portlet_content ul li img {
+			float: left;
+			margin: 10px;
+			border: none;
+		}
 		
+		.detailinfo {
+			float: left;
+		}
+		
+		.detailinfo .title {
+			margin: 0;
+			padding: 10px 0 0 0;
+			font-size: 12pt;
+			font-weight: normal;
+			color: #444;
+		} 
+		
+		.detailinfo .subtitle, .detailinfo .summary, .detailinfo .text, .detailinfo .members {
+			margin: 0;
+			font-size: 10pt;
+			line-height: 13pt;
+			color: #666;
+		}
+
+	
+		.detailinfo a, #taggroup p a {
+			text-decoration: none;
+			color: #007ab7;
+		}
+		
+		#detailgroup .text {
+			clear: both;
+			border-bottom: 1px solid #ddd;
+		}
+		
+			#detailgroup h5 {
+				border-bottom:2px solid #DDDDDD;
+				color:#444444;
+				font-size: 10pt;
+				font-weight:normal;
+				margin: 0 0 10px 0;
+				padding: 0 10px 5px 10px;
+			}
+		
+			#detailgroup .text p {
+				margin: 0;
+				padding: 0 10px 10px 10px;
+				font-size: 10pt;
+				line-height: 13pt;
+				color: #666;
+			}
+	
+#taggroup p {
+	margin: 0;
+	padding: 10px;
+	font-size: 10pt;
+	text-align: right;
+	line-height: 13pt;
+	color: #666;	
+}
+	
+	.portlet_content ul {
+		margin: 0;
+		padding: 0;
+		border-top: 1px solid #ddd;
+	}
+	
+	.portlet_content ul li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		border-bottom: 1px solid #ddd;
+		clear: both;
+		overflow: hidden;
+	}
+	
