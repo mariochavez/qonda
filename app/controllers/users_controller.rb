@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   layout 'start'
-  before_filter :authorize, :except => [:create]
+  before_filter :authorize, :only => [:index]
   
   def index
     @user = current_user
@@ -30,7 +30,6 @@ class UsersController < ApplicationController
       redirect_back_or_default(Tog::Config["plugins.tog_user.default_redirect_on_signup"])
       flash[:notice] = I18n.t("tog_user.user.sign_up")
     else
-      debugger
       render :action => 'new'
     end
   end
