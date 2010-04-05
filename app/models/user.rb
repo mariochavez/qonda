@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   def some_groups(limit = 5)
-    random = 'RANDOM()' unless defined? RANDOM_CODE
+    random = ''
     random = RANDOM_CODE if defined? RANDOM_CODE
     
     groups.all(:order => random, :limit => limit, :conditions => ['groups.created_at < ?', Time.now.utc])
