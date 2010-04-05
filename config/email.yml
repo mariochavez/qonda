@@ -1,12 +1,18 @@
 development:
-  :address: smtp.server.com
-  :port: 25
+  :address: smtp.gmail.com
+  :port: 587
   :authentication: plain
-  :user_name: user
-  :password: pass
+  :user_name: qondaaficionados@decisionesinteligentes.com
+  :password: 476X77
+  :enable_starttls_auto: true
+  :tls: true
+  :domain: decisionesinteligentes.com
 production:
-  :address: mail.qondaaficionados.mx
-  :port: 25
-  :authentication: plain
-  :user_name: qonda@qondaaficionados.mx
-  :password: milenio
+    :address: smtp.gmail.com
+    :port: 587
+    :authentication: plain
+    :user_name: qondaaficionados@decisionesinteligentes.com
+    :password: 476X77
+    :enable_starttls_auto: true
+    :tls: true
+    :domain: decisionesinteligentes.com
