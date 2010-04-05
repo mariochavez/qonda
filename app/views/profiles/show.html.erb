@@ -1,13 +1,9 @@
-<div id="left">
-	<%= render :partial => "shared/left" %>
-</div>
+<%= render :partial => 'shared/left' %>
 
-<div id="right">
-	<%= render :partial => "shared/right" %>
-</div>
+<%= render :partial => 'shared/right' %>
 
 <div id="center">
-	<div id="videos" class="area">
+	<div id="profile" class="area">
 	<h4><%= I18n.t("tog_user.interface.profile") %> de <%=@profile.full_name%></h4>
 	<div class="detail detail1">
 	    <div class="image"><%=icon_for_profile(@profile, 'big')%></div>
