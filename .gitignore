@@ -13,7 +13,6 @@ doc/*.dot
 coverage/*
 db/*.sqlite3
 *.tmproj
-*.sw?
 vendor/gems
 vendor/bundler_gems
 .bundle/**
