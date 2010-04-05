@@ -1,6 +1,9 @@
 class Profile < ActiveRecord::Base
   def some_friends(limit = 5)
-    followers.all(:order => 'RANDOM()', :limit => limit, :conditions => ['profiles.created_at < ?', Time.now.utc])
+    random = ''
+    random = RANDOM_CODE if defined? RANDOM_CODE
+        
+    followers.all(:order => random, :limit => limit, :conditions => ['profiles.created_at < ?', Time.now.utc])
   end
   
   def total_friends
