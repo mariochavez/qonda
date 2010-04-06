@@ -1508,5 +1508,90 @@ div.teamdetails p {
 		background-color: #f7f7f7;
 		border-bottom: 1px dotted #ccc;
 		color: #444;
-	}	
+	}
+
+/*---/ESTILO DE PROFILES/---*/	
+
+#profile {
+	margin: 20px 0 0 0;
+}
+
+	#profile h2 {
+		margin: 0;
+		padding: 3px 10px;
+		background: #007AB7 url(../images/h4-bg.gif) 0 0 repeat-x;
+		font-size: 10pt;
+		font-weight: normal;
+		text-transform: uppercase;
+		color: #fff;
+	}
 	
+	.detail {
+		margin: 20px 0;
+		width: 100%;
+		overflow: hidden;
+	}
+	
+	#profile .image {
+		float: left;
+		border-top: 5px solid #ddd;
+		border-bottom: 1px dotted #ddd;
+	}
+	
+	#profile .infoprofile {
+		float: left;
+		width: 470px;
+		height: 170px;
+		border-top: 5px solid #ddd;
+		border-bottom: 1px dotted #ddd;
+	}
+	
+		#profile .infoprofile h5 {
+			margin: 0;
+			padding: 10px 10px 5px 0;
+			font-size: 12pt;
+			font-weight: normal;
+			color: #444;
+		}
+		
+		#profile .infoprofile p {
+			margin: 0;
+			padding: 5px 0;
+			font-size: 10pt;
+			color: #444;
+		}
+		
+		.groupprofile {
+			clear: both;
+		}	
+		
+			.groupprofile h3 {
+				margin: 0;
+				padding: 20px 5px 0 5px;
+				font-size: 10pt;
+				font-weight: bold;
+				border-bottom: 1px solid #ddd;
+				color: #444;
+			}
+	
+			.groupprofile ul {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.groupprofile ul li {
+				margin: 0;
+				padding: 5px;
+				list-style: none;
+				font-size: 10pt;
+				border-bottom: 1px dotted #ddd;
+			}
+			
+			.groupprofile ul li a {
+				text-decoration: none;
+				color: #007ab7;
+			}
+	
+	
+	
+		
