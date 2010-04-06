@@ -1,21 +1,23 @@
-<div class="titleB"><%=h @message.subject %></div>
-<br />
-<p>
-  <strong><%= I18n.t("tog_mail.model.from") %>:</strong>
-  <%=h @message.from.login %>
-  <br/>
-  <strong><%= I18n.t("tog_mail.model.to") %>:</strong>
-  <%=h @message.to.login %>
-</p>
+<div id="mainmessages">
 
-<p>
-  <strong><%= I18n.t("tog_mail.model.content") %>:</strong>
-  <%= @message.content %>
-</p>
+	<h2>Mail</h2>
+	<h3><%=h @message.subject %></h3>
 
-<% form_tag member_message_path(@message), :method => :delete do -%>
-  <div class="actions">
-    <%= link_to I18n.t("tog_mail.member.reply"), reply_member_message_path(@message), :class=>"button mainaction" unless current_user == @message.from %>
-    <%= submit_tag I18n.t("tog_mail.member.delete"), :disable_with => I18n.t("tog_mail.member.wait"), :class=>"button delete" %>
-  </div>
-<% end -%>
+	<div class="bodymessages">
+		<ol>
+			<li><strong><%= I18n.t("tog_mail.model.from") %>: </strong><%=h @message.from.login %></li>
+  			<li><strong><%= I18n.t("tog_mail.model.to") %>: </strong><%=h @message.to.login %></li>
+			<li class="tborder"><strong><%= I18n.t("tog_mail.model.content") %>:</strong></li>
+  		</ol>
+		<p><%= @message.content %></p>
+		
+	</div><!--end bodymessages-->
+
+	<% form_tag member_message_path(@message), :method => :delete do -%>
+  	<div class="actions">
+    	<%= link_to I18n.t("tog_mail.member.reply"), reply_member_message_path(@message), :class=>"button mainaction" unless current_user == @message.from %>
+		<%= submit_tag I18n.t("tog_mail.member.delete"), :disable_with => I18n.t("tog_mail.member.wait"), :class=>"button delete" %>
+  	</div>
+	<% end -%>
+
+</div><!--end mainmessages-->

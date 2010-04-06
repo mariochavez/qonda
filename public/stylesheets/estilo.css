@@ -1274,4 +1274,239 @@ div.teamdetails p {
 		clear: both;
 		overflow: hidden;
 	}
+
+/*---/ESTILO DE MESSAGES/---*/
+
+#mainmessages, #newmessages, #replymessages {
+	margin: 20px 0 0 0;
+}
+
+	#mainmessages h2, #newmessages h2, #replymessages h2 {
+		margin: 0;
+		padding: 3px 10px;
+		background: #007AB7 url(../images/h4-bg.gif) 0 0 repeat-x;
+		font-size: 10pt;
+		font-weight: normal;
+		text-transform: uppercase;
+		color: #fff;
+	}
+	
+		#newmessages h2 a, #replymessages h2 a {
+			text-decoration: none;
+			color: yellow;
+		}
+	
+	#mainmessages h3 {
+		margin: 20px 0 0 0;
+		padding: 5px;
+		font-size: 10pt;
+		text-transform: uppercase;
+		border-bottom: 5px solid #ddd;
+		color: #444;
+	}
+
+	#mainmessages ul {
+		height: 30px;
+		margin: 20px 0 0 0;
+		padding: 0;
+		border: 1px solid #eee;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+	}
+
+	#mainmessages ul li {
+		float: left;
+		list-style: none;
+		margin: 0;
+		font-size: 8pt;
+		font-weight: bold;
+		text-transform: uppercase;
+		border-right: 1px solid #eee;				
+	}
+			
+		#mainmessages ul li a {
+			display: block;
+			padding: 9px;
+			text-decoration: none;
+			color: #666;
+		}
+			
+		#mainmessages ul li a:hover {
+			padding: 9px;
+			background-color: #eee;
+			color: #007ab7;
+		}
+			
+		#mainmessages ul li a.subselected {
+			background-color: #eee;
+			color: #007ab7;
+		}
+		
+	#mainmessages .tableB {
+		margin: 20px 0;
+		width: 100%;
+	}
+	
+		#mainmessages .tableB thead tr th {
+			margin: 0;
+			padding: 5px 0;
+			font-size: 10pt;
+			text-align: center;
+			text-transform: uppercase;
+			border-bottom: 5px solid #ddd;
+			color: #444;
+		}
+		
+		#mainmessages .tableB tbody tr td {
+			margin: 0;
+			padding: 5px;
+			font-size: 10pt;
+			border-bottom: 1px dotted #ddd;
+			color: #444;
+		}
+		
+			#mainmessages .tcenter {
+				text-align: center;
+			}
+			
+		#mainmessages .tableB a, .bodymessages a, #mainmessages .actions a, .tarea a {
+			text-decoration: none;
+			color: #007ab7;
+		}
+		
+		#mainmessages .tableB tfoot tr td {
+			margin: 0;
+			padding: 10px 5px 0 5px;
+			font-size: 10pt;
+			text-align: right;
+			color: #ccc;
+		}
+		
+	.bodymessages {
+		margin: 10px 0;
+		border-bottom: 1px solid #ddd;
+	}
+	
+		.bodymessages ol {
+			margin: 0;
+			padding: 0;
+		}
+		
+		.bodymessages ol li {
+			margin: 0;
+			padding: 0 5px 5px 5px;
+			list-style: none;
+			font-size: 10pt;
+			color: #444;
+		}
+		
+			.bodymessages .tborder {
+				border-bottom: 1px solid #ddd;
+			}
+		
+		.bodymessages p {
+			margin: 0;
+			padding: 5px;
+			font-size: 10pt;
+			line-height: 15pt;
+			color: #444;
+		}
+		
+	#mainmessages .actions {
+		margin: 0 0 20px 0;
+		padding: 0 0 0 5px;
+		font-size: 10pt;
+	}
+	
+	#mainmessages .actions .button {
+		padding-right: 10px;
+	}
+	
+	.formmessages {
+		margin: 20px 0;
+		border-top: 5px solid #ddd;
+	}
+	
+		.formmessages fieldset {
+			margin: 0 0 10px 0;
+			border: 0;
+			border-bottom: 1px solid #ddd;
+		}
+		
+		.formmessages label {
+			float: left;
+			width: 100px;
+			padding: 3px 5px 0 0;
+			font-size: 10pt;
+			font-weight: bold;
+			text-align: right;
+			color: #444;
+		}
+		
+		.formmessages fieldset input {
+			width: 350px;
+			padding: 2px;
+			font-size: 10pt;
+			border: 1px solid #ccc;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			color: #444;
+		}
+		
+		.formmessages fieldset select {
+			width: 150px;
+			padding: 2px;
+			font-size: 10pt;
+			border: 1px solid #ccc;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			color: #444;
+		}
+		
+			.formmessages fieldset select option {
+				font-size: 10pt;
+				color: #444;
+			}
+		
+		.formmessages fieldset textarea {
+			width: 500px;
+			height: 200px;
+			padding: 2px;
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 10pt;
+			line-height: 13pt;
+			border: 1px solid #ccc;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			color: #444;
+		}
+		
+		.formmessages .tname {
+			padding: 3px 0 0 0;
+			font-size: 10pt;
+			color: #444;
+		}
+		
+	#replymessages ol {
+		margin: 0;
+		padding: 0;
+	}
+		
+		#replymessages ol li {
+			margin: 0;
+			padding: 0 5px 5px 5px;
+			list-style: none;
+			border-bottom: 1px dotted #ccc;
+			font-size: 10pt;
+			color: #444;
+		}	
+
+	#replymessages .tarea {
+		padding: 5px;
+		font-size: 10pt;
+		line-height: 13pt;
+		background-color: #f7f7f7;
+		border-bottom: 1px dotted #ccc;
+		color: #444;
+	}	
 	
